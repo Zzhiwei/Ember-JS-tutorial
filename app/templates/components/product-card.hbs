@@ -1,4 +1,6 @@
-{{yield}}
+<h1>Number: {{this.number}}</h1>
+<button {{action "addNumber"}}>Add</button>
+
 {{#link-to "item" 1 class="product"}}
     {{#product-card/image}}{{/product-card/image}}
     {{#product-card/details}}{{/product-card/details}}
