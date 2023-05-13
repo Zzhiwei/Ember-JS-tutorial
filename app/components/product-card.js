@@ -4,7 +4,7 @@ export default Ember.Component.extend({
   number: 0,
   actions: {
     addNumber() {
-      this.number += 1;
+      Ember.set(this, "number", this.number + 1)
     },
   },
 });
