@@ -1,6 +1,7 @@
 {{#general-container}}
-    {{product-card}}
-    {{product-card}}
+    {{#each this.model as |product|}}
+        {{product-card product=product test=this.test}}
+    {{/each}}
 {{/general-container}}
     
 

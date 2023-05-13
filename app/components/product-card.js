@@ -4,7 +4,10 @@ export default Ember.Component.extend({
   number: 0,
   actions: {
     addNumber() {
-      Ember.set(this, "number", this.number + 1)
+      this.set("number", this.number + 1);
     },
   },
+  productImage: Ember.computed("product", function () {
+    return this.get("product").colors[0].image;
+  }),
 });

@@ -1,7 +1,8 @@
 <h1>Number: {{this.number}}</h1>
 <button {{action "addNumber"}}>Add</button>
 
-{{#link-to "item" 1 class="product"}}
-    {{product-card/image src='/assets/images/beats-solo-red.png'}}
-    {{product-card/details}}
+{{#link-to "item" product.id class="product"}}
+    {{!-- <div>{{test.a}}</div> --}}
+    {{product-card/image src=productImage}}
+    {{product-card/details name=product.name price=product.price}}
 {{/link-to}}
