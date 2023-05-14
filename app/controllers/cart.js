@@ -5,7 +5,7 @@ export default Ember.Controller.extend({
   // subtotal: 99,
   // tax: 22,
   // total: 11,
-
+  cart: Ember.inject.service('shopping-cart'),
   /* this is another way */
   get subtotal() {
     /* can access model returned from routes inside here */

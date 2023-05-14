@@ -18,13 +18,21 @@
     <i class="text-danger font-weight-bold">{{price.current}}</i>
   </section>
   
-  <div>
-    <h5>Color</h5>
-    <div class="product-colors active-{{color}}">
-      {{#each colors as |colorInfo|}}
-        <span class="product-color color-{{colorInfo.color}}"
-          {{action "onChangeColor" colorInfo.color}}></span>
-      {{/each}}
+  {{#if hasDetails}}
+    <div class="d-flex justify-content-between align-items-end">
+      <div>
+        <h5>Color</h5>
+        <div class="product-colors active-{{color}}">
+          {{#each colors as |colorInfo|}}
+            <span class="product-color color-{{colorInfo.color}}"
+              {{action "onChangeColor" colorInfo.color}}></span>
+          {{/each}}
+        </div>
+      </div>
+      <button class="btn btn-info" type="button" {{action "addToCart"}}>
+        <i class="fa fa-shopping-cart mr-1"></i>
+        Add to cart
+      </button>
     </div>
-  </div>
+  {{/if}}
 </div>

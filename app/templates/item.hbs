@@ -1,7 +1,7 @@
 {{#general-container}}
     <div class="product item-details-page">
     {{product-card/image src=this.productImage}}
-    {{product-card/details name=model.name color=this.color colors=this.model.colors onChangeColor=(action "onChangeColor")}}
+    {{product-card/details hasDetails=true price=model.price  name=model.name color=this.color colors=this.model.colors onChangeColor=(action "onChangeColor")}}
     </div>
     <h5 class="mt-5">Features</h5>
   <ul>
