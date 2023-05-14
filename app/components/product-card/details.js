@@ -11,9 +11,6 @@ export default Ember.Component.extend({
       const color = this.get("color");
       const colors = this.get("colors");
       const price = this.get("price");
-      console.log({
-        name, color,colors,price
-      })
       this.get('cart').addItem({
         name,
         color,

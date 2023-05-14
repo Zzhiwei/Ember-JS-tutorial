@@ -1,24 +1,9 @@
-# E2
+# READ THIS IF YOU WANT TO SET UP
+(this project uses ember.js v2.8)
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
-
-## Prerequisites
-
-You will need the following things properly installed on your computer.
-
-* [Git](http://git-scm.com/)
-* [Node.js](http://nodejs.org/) (with NPM)
-* [Bower](http://bower.io/)
-* [Ember CLI](http://ember-cli.com/)
-* [PhantomJS](http://phantomjs.org/)
-
-## Installation
-
-* `git clone <repository-url>` this repository
-* `cd e2`
-* `npm install`
-* `bower install`
+* install and use node version v6.17.1
+* install bower
+* "bower install && npm install
 
 ## Running / Development
 

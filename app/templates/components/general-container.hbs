@@ -2,7 +2,8 @@
 <i class="fa fa-shopping-cart"></i>
 {{#if this.shoppingCart.itemList.length}}
     <span class="cart-count d-inline-flex justify-content-center align-items-center">
-      {{this.shoppingCart.itemList.length}}
+      {{numItems}}
+      {{!-- {{this.shoppingCart.itemList.length}} --}}
     </span>
   {{/if}}
 {{/link-to}}

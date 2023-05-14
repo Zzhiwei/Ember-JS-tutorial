@@ -8,8 +8,25 @@
   </ol>
 
   {{#each this.cart.itemList as |item|}}
-    <div class="d-flex align-items-center">
-      <h4>{{item.name}}</h4>
+    <div class="cart-item d-flex align-items-center">
+      <div class="cart-item-thumbnail">
+        <img src={{item.image}} alt="">
+      </div>
+      <div class="ml-3">
+        <h4>{{item.name}}</h4>
+        {{!-- custom helpers skipped --}}
+        {{!-- <i class="font-weight-bold">{{currency item.price}}</i> --}}
+      </div>
+      <input
+        type="number"
+        class="ml-auto"
+        value={{item.count}}
+        {{!-- the following line passes new value as first arg --}}
+        {{!-- oninput={{action "updateItemCount" item value="target.value"}} --}}
+        oninput={{action "updateItemCount" item}}
+        {{!-- the following line does same thing as above line --}}
+        {{!-- {{action "updateItemCount" item on="input"}} --}}
+      >
     </div>
   {{/each}}
 
